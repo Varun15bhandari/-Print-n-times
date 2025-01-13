@@ -3,10 +3,10 @@ public class Solution {
     public static List<String> printNtimes(int n){
         // Write your code here.
         List<String>result=new ArrayList<>();
-        if(n==0)return result;
-       result= printNtimes(n-1);
-       result.add("Coding Ninjas");
-       return result;
+        if(n==0)return result;  // return empty list if base case is satisfied
+       result= printNtimes(n-1); // recursive call 
+       result.add("Coding Ninjas"); // add codding ninjas to list 
+       return result; // return result list
 
 
     
